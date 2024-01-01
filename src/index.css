@@ -1,18 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Playfair+Display:wght@400;600;800&family=Poppins:wght@100&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
 
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+li {
+  list-style-type: none;
 }
 
 .Container {
-  margin: 5px;
   height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: whitesmoke;
+  /* background-color: #a6b1e1; */
+  /* background-color: #cca8e9; */
+  background-color: black;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.45);
 }
 
@@ -20,24 +26,28 @@
   padding-left: 10px;
   font-size: 30px;
   font-weight: 700;
+  /* color: black; */
+  color: white;
 }
 .Search {
-  width: 300px;
+  width: 270px;
   height: 30px;
   text-align: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  box-shadow: 10px;
+  box-shadow: gray;
+  padding-bottom: 2px;
 }
 
 .btn {
-  width: 50px;
+  width: 40px;
   height: 30px;
-  color: whitesmoke;
-  background: #000;
+  color: black;
+  background: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
+  padding-bottom: 2px;
 }
 
 .items {
@@ -47,9 +57,113 @@
   gap: 15px;
   font-weight: 700;
   font-size: 20px;
+  padding-right: 1rem;
+  color: white;
 }
 
 .items > img {
   width: 30px;
   height: 30px;
+}
+
+.searchicon {
+  background-color: gray;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cards {
+  width: 16rem;
+  height: 15rem;
+
+  border: 2px solid #424874;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin: 30px;
+  background-color: rgb(255, 253, 253);
+  box-shadow: 5px 5px 5px grey;
+}
+.cards:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.userImg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.imgUser {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+  border-radius: 60%;
+}
+
+.name {
+  font-size: 13px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  padding: 5px;
+  margin: 2px;
+  font-size: 13px;
+}
+
+.emailicon {
+  display: flex;
+  gap: 10px;
+}
+.number {
+  padding: 5px;
+  margin: 2px;
+}
+
+.numicon {
+  display: flex;
+  gap: 10px;
+}
+
+.Cardbtn {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.edit {
+  width: 3rem;
+  height: 2rem;
+  color: aliceblue;
+  background-color: rgb(62, 116, 233);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.del {
+  width: 4rem;
+  height: 2rem;
+  color: white;
+  background-color: rgb(236, 76, 76);
+  border-radius: 5px;
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
 }
