@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Playfair+Display:wght@400;600;800&family=Poppins:wght@100&family=Roboto:ital@0;1&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.Container {
+  margin: 5px;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.45);
+}
+
+.lg {
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.Search {
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 10px;
+}
+
+.btn {
+  width: 50px;
+  height: 30px;
+  color: whitesmoke;
+  background: #000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.items > img {
+  width: 30px;
+  height: 30px;
+}
