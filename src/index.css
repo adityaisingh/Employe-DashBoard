@@ -167,3 +167,41 @@ li {
   cursor: pointer;
   font-weight: bold;
 }
+
+@media screen and (max-width: 750px) {
+  .Search {
+    width: 180px;
+  }
+  .lg {
+    font-size: 20px;
+  }
+  .items {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Search {
+    width: 120px;
+  }
+  .lg {
+    font-size: 15px;
+  }
+  .items {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Search {
+    width: 90px;
+  }
+  .lg {
+    font-size: 10px;
+  }
+  .items {
+    font-size: 10px;
+  }
+  .btn {
+    width: 30px;
+    height: 30px;
+  }
+}
